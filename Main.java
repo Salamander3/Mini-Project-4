@@ -7,13 +7,14 @@ class Main
     Scanner scan = new Scanner(System.in);
     
     //Asks the user for their information
-    System.out.println("Do you want Ice Cream");
+    System.out.println("Do you want Ice Cream? (true or false)");
     boolean wantsIceCream = scan.nextBoolean();
     if(wantsIceCream)
     {
       System.out.println("The flavors we have are vanilla, choclate, and strawberry");
       System.out.println("Enter what flavor you want.");
-      choosenFlavor = scan.nextLine();
+      String chosenFlavor = scan.nextLine();
+      System.out.println(iceCreamChecker(chosenFlavor));
     }
     else
     {
@@ -49,8 +50,8 @@ class Main
   //This method
   static boolean method2()
   {
-    boolean
+    //boolean
 
-    return
+    //return
   }
 }
