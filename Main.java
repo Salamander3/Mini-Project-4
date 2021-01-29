@@ -6,18 +6,18 @@ class Main
   {
     Scanner scan = new Scanner(System.in);
     
-    System.out.print("What is your name");
-    String name = scan.next();
-  }
+    //Asks the user for their information
+    System.out.println("Enter a number between 1 and 10");
+    int ogNum = scan.nextInt();
 
-  //This method 
-  public static boolean method1;
-  {
 
   }
+
+  //This method randomizes the number the user enters
+
 
   //This method
-  public static double method2;
+  static double method2;
   {
 
   }
