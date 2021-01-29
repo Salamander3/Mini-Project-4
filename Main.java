@@ -7,21 +7,25 @@ class Main
     Scanner scan = new Scanner(System.in);
     
     //Asks the user for their information
-    System.out.println("Enter a number between 1 and 10");
-    int ogNum = scan.nextInt();
+    System.out.println("Do you want Ice Cream");
+    int wantsIce = scan.nextBoolean();
 
-    
+    System.out.println(method1());
   }
 
   //This method randomizes the number the user enters
-  static boolean numRandomizer(int inputNum);
+  static int method1()
   {
-    return rNum = inputNum * 10 / 5 -10 + 16;
+    int 
+
+    return 
   }
 
   //This method
-  static double method2;
+  static boolean method2()
   {
+    boolean
 
+    return
   }
 }
