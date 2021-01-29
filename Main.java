@@ -8,17 +8,42 @@ class Main
     
     //Asks the user for their information
     System.out.println("Do you want Ice Cream");
-    int wantsIce = scan.nextBoolean();
+    boolean wantsIceCream = scan.nextBoolean();
+    if(wantsIceCream)
+    {
+      System.out.println("The flavors we have are vanilla, choclate, and strawberry");
+      System.out.println("Enter what flavor you want.");
+      choosenFlavor = scan.nextLine();
+    }
+    else
+    {
+      System.out.println("Bye!");
+    }
 
-    System.out.println(method1());
+    
   }
 
   //This method randomizes the number the user enters
-  static int method1()
+  static String iceCreamChecker(String chosen)
   {
-    int 
-
-    return 
+    String flavor;
+    if(chosen == "vanilla")
+    {
+      flavor = "vanilla";
+    }
+    if(chosen == "chocolate")
+    {
+      flavor = "chocolate";
+    }
+    if(chosen == "strawberry")
+    {
+      flavor = "strawberry";
+    }
+    else
+    {
+      System.out.println("Sorry we do not have that flavor. Please come back again!");
+    }
+    return flavor;
   }
 
   //This method
