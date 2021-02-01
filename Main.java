@@ -11,7 +11,7 @@ class Main
     boolean wantsIceCream = scan.nextBoolean();
     if(wantsIceCream)
     {
-      System.out.println("The flavors we have are vanilla, choclate, and mint");
+      System.out.println("The flavors we have are vanilla, choclate, and mint.");
       System.out.println("Enter what flavor you want.");
       String chosenFlavor = scan.next();
       System.out.println("That will cost " + iceCreamCost(chosenFlavor));
@@ -24,20 +24,20 @@ class Main
     
   }
 
-  //This method convnerts the ice cream chosen into a price
+  //This method converts the ice cream chosen into a price
   static double iceCreamCost(String chosen)
   {
     double cost = 0;
     
-    if(chosen == "vanilla")
+    if(chosen.equals("vanilla"))
     {
       cost = 1.00;
     }
-    if(chosen == "chocolate")
+    else if(chosen.equals("chocolate"))
     {
       cost = 1.50;
     }
-    if(chosen == "mint")
+    else if(chosen.equals("mint"))
     {
       cost = 2.00;
     }
@@ -49,10 +49,10 @@ class Main
   }
 
   //This method will calculate the cost with tax and compare it to how much money you have to see you can buy the ice cream.
-  //static boolean method2()
+  static boolean method2()
   {
-    //boolean
-
-    //return
+    boolean canYouBuy;
+    canYouBuy = false;
+    return canYouBuy;
   }
 }
