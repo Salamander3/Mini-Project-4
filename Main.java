@@ -48,7 +48,7 @@ class Main
     return cost;
   }
 
-  //This method
+  //This method will calculate the cost with tax and compare it to how much money you have to see you can buy the ice cream.
   //static boolean method2()
   {
     //boolean
