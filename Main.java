@@ -11,10 +11,10 @@ class Main
     boolean wantsIceCream = scan.nextBoolean();
     if(wantsIceCream)
     {
-      System.out.println("The flavors we have are vanilla, choclate, and strawberry");
+      System.out.println("The flavors we have are vanilla, choclate, and mint");
       System.out.println("Enter what flavor you want.");
-      String chosenFlavor = scan.nextLine();
-      System.out.println(iceCreamChecker(chosenFlavor));
+      String chosenFlavor = scan.next();
+      System.out.println("That will cost " + iceCreamCost(chosenFlavor));
     }
     else
     {
@@ -24,31 +24,32 @@ class Main
     
   }
 
-  //This method randomizes the number the user enters
-  static String iceCreamChecker(String chosen)
+  //This method convnerts the ice cream chosen into a price
+  static double iceCreamCost(String chosen)
   {
-    String flavor;
+    double cost = 0;
+    
     if(chosen == "vanilla")
     {
-      flavor = "vanilla";
+      cost = 1.00;
     }
     if(chosen == "chocolate")
     {
-      flavor = "chocolate";
+      cost = 1.50;
     }
-    if(chosen == "strawberry")
+    if(chosen == "mint")
     {
-      flavor = "strawberry";
+      cost = 2.00;
     }
     else
     {
       System.out.println("Sorry we do not have that flavor. Please come back again!");
     }
-    return flavor;
+    return cost;
   }
 
   //This method
-  static boolean method2()
+  //static boolean method2()
   {
     //boolean
 
