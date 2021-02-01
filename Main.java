@@ -10,29 +10,31 @@ class Main
     System.out.println("Do you want Ice Cream? (true or false)");
     boolean wantsIceCream = scan.nextBoolean();
     if(wantsIceCream)
-    {
+    { //will happen if the user says true
+      //first step in getting ice cream. will ask you for the flavor you want.
       System.out.println("The flavors we have are vanilla, choclate, and mint.");
       System.out.println("Enter what flavor you want.");
       String chosenFlavor = scan.next();
       System.out.println("That will cost " + iceCreamCost(chosenFlavor));
       
+      //second step in geting ice cream. calculates the cost and ask user for the amount of money they have.
       double cost = iceCreamCost(chosenFlavor);
       System.out.println("Enter the amount of money you have.");
       double customersMoney = scan.nextDouble();
       boolean canYouPay = calculatePayment(customersMoney, cost);
       
       if(canYouPay)
-      {
+      { //will happen if you can buy ice cream
         System.out.println("Yes You Can Buy Ice Cream");
       }
       else
-      {
+      { //will happen if you can't buy ice cream
         System.out.println("No You Can't Buy Ice Cream");
       }
       System.out.println("Bye! Enjoy Your Ice Cream!");
     }
     else
-    {
+    { //will happen if the user says false
       System.out.println("Bye!");
     }
 
@@ -60,6 +62,7 @@ class Main
     {
       System.out.println("Sorry we do not have that flavor. Please come back again!");
     }
+    
     return cost;
   }
 
