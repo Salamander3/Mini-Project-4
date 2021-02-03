@@ -12,7 +12,7 @@ class Main
     if(wantsIceCream)
     { //will happen if the user says true
       //first step in getting ice cream. will ask you for the flavor you want.
-      System.out.println("The flavors we have are vanilla, choclate, and mint.");
+      System.out.println("The flavors we have are vanilla, chocolate, and mint.");
       System.out.println("Enter what flavor you want.");
       String chosenFlavor = scan.next();
       System.out.println("That will cost " + iceCreamCost(chosenFlavor));
@@ -25,12 +25,12 @@ class Main
       
       if(canYouPay)
       { //will happen if you can buy ice cream
-        System.out.println("Yes, You Can Buy Ice Cream");
+        System.out.println("Yes, You Can Buy Ice Cream!");
         System.out.println("Bye! Enjoy Your Ice Cream!");
       }
       else
       { //will happen if you can't buy ice cream
-        System.out.println("No, You Can't Buy Ice Cream");
+        System.out.println("No, You Can't Buy Ice Cream.");
         System.out.println("Bye!");
       }
       
