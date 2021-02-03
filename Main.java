@@ -25,13 +25,15 @@ class Main
       
       if(canYouPay)
       { //will happen if you can buy ice cream
-        System.out.println("Yes You Can Buy Ice Cream");
+        System.out.println("Yes, You Can Buy Ice Cream");
+        System.out.println("Bye! Enjoy Your Ice Cream!");
       }
       else
       { //will happen if you can't buy ice cream
-        System.out.println("No You Can't Buy Ice Cream");
+        System.out.println("No, You Can't Buy Ice Cream");
+        System.out.println("Bye!");
       }
-      System.out.println("Bye! Enjoy Your Ice Cream!");
+      
     }
     else
     { //will happen if the user says false
